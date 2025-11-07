@@ -1,0 +1,149 @@
+:root {
+  --body-bg-color: #f8f6fb;
+  --primary-color: #2c69e8;
+  --white-color: #fff;
+  --desc-color: #747474;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1.3rem;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+/* Menu Styles */
+
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+  background-color: var(--white-color);
+  position: sticky;
+  top: 0;
+}
+
+nav .nav-home {
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: var(--primary-color);
+}
+
+nav .nav-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav .nav-menu a:last-child {
+  margin-left: 1rem;
+}
+
+/* Header Styles */
+
+header {
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+header .header-img {
+  width: 50%;
+  flex-basis: 50%;
+}
+
+header .header-content {
+  width: 50%;
+  flex-basis: 50%;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.7rem;
+}
+
+header .header-content .main-title {
+  font-weight: bold;
+  font-size: 2.9rem;
+  max-width: 500px;
+  text-align: left;
+}
+
+header .header-content .description {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--desc-color);
+}
+
+/* services styles */
+
+.services {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.services > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.services > div i {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services div:nth-child(1) i {
+  background-color: #ffebef;
+  color: #ec8da0;
+}
+
+.services div:nth-child(2) i {
+  background-color: #eaf3ff;
+  color: #889ec8;
+}
+
+.services div:nth-child(3) i {
+  background-color: #fffbe6;
+  color: #f8e17b;
+}
+
+.services div:nth-child(4) i {
+  background-color: #ebeeff;
+  color: #90aad9;
+}
