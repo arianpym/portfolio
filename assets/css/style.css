@@ -230,7 +230,7 @@ header {
 
 @media only screen and (max-width: 680px) {
   body {
-    overflow: auto;
+    height: 100vh;
   }
 
   nav {
